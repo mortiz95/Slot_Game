@@ -24,7 +24,7 @@ class Application {
         this.app.engine('.hbs',exphbs({
             layoutsDir: path.join(this.app.get('views'),'layouts'),
             partialsDir: path.join(this.app.get('views'),'partials'),
-            defaultLayout: 'index',
+            defaultLayout: 'main',
             extname:'.hbs'
         }));
         this.app.set('view engine','.hbs');
